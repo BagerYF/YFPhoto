@@ -42,7 +42,7 @@ YFPhoto: 功能强大的 iOS 图像选择框架。<br/>
 该项目最低支持 `Xcode 8.0`。
 
 
-TIP
+Special Thanks
 ==============
 
 Special thanks to Mr. 456 to provide technical support!!!
