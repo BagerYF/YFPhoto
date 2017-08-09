@@ -28,8 +28,7 @@
     __weak typeof(self) weakSelf = self;
     
     [self getYFPhotoInfoWithImgType:YFSelectImgTypeEdited photoInfo:^(id photoInfo) {
-        NSArray *photoInfos = photoInfo;
-        [weakSelf.imgView setImage:photoInfos[0]];
+        [weakSelf.imgView setImage:photoInfo];
     }];
     
 //    [self getYFPhotoInfoWithImgType:YFSelectImgTypeEditedInfo photoInfo:^(id photoInfo) {
