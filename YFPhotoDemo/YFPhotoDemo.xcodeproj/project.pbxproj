@@ -15,7 +15,7 @@
 		0A295CBF1F39451300CD7F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A295CBD1F39451300CD7F8B /* LaunchScreen.storyboard */; };
 		0A295CCA1F39451400CD7F8B /* YFPhotoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A295CC91F39451400CD7F8B /* YFPhotoDemoTests.m */; };
 		0A295CD51F39451400CD7F8B /* YFPhotoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A295CD41F39451400CD7F8B /* YFPhotoDemoUITests.m */; };
-		0A295CE51F39473600CD7F8B /* UIViewController+YFPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A295CE41F39473600CD7F8B /* UIViewController+YFPhoto.m */; };
+		0AF203CA1F3AD045000571F1 /* UIViewController+YFPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF203C91F3AD045000571F1 /* UIViewController+YFPhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		0A295CD01F39451400CD7F8B /* YFPhotoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFPhotoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A295CD41F39451400CD7F8B /* YFPhotoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPhotoDemoUITests.m; sourceTree = "<group>"; };
 		0A295CD61F39451400CD7F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A295CE31F39473600CD7F8B /* UIViewController+YFPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YFPhoto.h"; sourceTree = "<group>"; };
-		0A295CE41F39473600CD7F8B /* UIViewController+YFPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YFPhoto.m"; sourceTree = "<group>"; };
+		0AF203C81F3AD045000571F1 /* UIViewController+YFPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YFPhoto.h"; sourceTree = "<group>"; };
+		0AF203C91F3AD045000571F1 /* UIViewController+YFPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YFPhoto.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				0A295CB31F39451300CD7F8B /* AppDelegate.m */,
 				0A295CB51F39451300CD7F8B /* ViewController.h */,
 				0A295CB61F39451300CD7F8B /* ViewController.m */,
-				0A295CE21F3946E100CD7F8B /* YFPhoto */,
 				0A295CB81F39451300CD7F8B /* Main.storyboard */,
+				0AF203C71F3AD045000571F1 /* YFPhoto */,
 				0A295CBB1F39451300CD7F8B /* Assets.xcassets */,
 				0A295CBD1F39451300CD7F8B /* LaunchScreen.storyboard */,
 				0A295CC01F39451300CD7F8B /* Info.plist */,
@@ -144,13 +144,14 @@
 			path = YFPhotoDemoUITests;
 			sourceTree = "<group>";
 		};
-		0A295CE21F3946E100CD7F8B /* YFPhoto */ = {
+		0AF203C71F3AD045000571F1 /* YFPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				0A295CE31F39473600CD7F8B /* UIViewController+YFPhoto.h */,
-				0A295CE41F39473600CD7F8B /* UIViewController+YFPhoto.m */,
+				0AF203C81F3AD045000571F1 /* UIViewController+YFPhoto.h */,
+				0AF203C91F3AD045000571F1 /* UIViewController+YFPhoto.m */,
 			);
-			path = YFPhoto;
+			name = YFPhoto;
+			path = ../../YFPhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +290,7 @@
 			files = (
 				0A295CB71F39451300CD7F8B /* ViewController.m in Sources */,
 				0A295CB41F39451300CD7F8B /* AppDelegate.m in Sources */,
-				0A295CE51F39473600CD7F8B /* UIViewController+YFPhoto.m in Sources */,
+				0AF203CA1F3AD045000571F1 /* UIViewController+YFPhoto.m in Sources */,
 				0A295CB11F39451300CD7F8B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +527,7 @@
 				0A295CDB1F39451400CD7F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A295CDC1F39451400CD7F8B /* Build configuration list for PBXNativeTarget "YFPhotoDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				0A295CDE1F39451400CD7F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A295CDF1F39451400CD7F8B /* Build configuration list for PBXNativeTarget "YFPhotoDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +545,7 @@
 				0A295CE11F39451400CD7F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
