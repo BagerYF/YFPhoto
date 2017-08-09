@@ -1,4 +1,5 @@
-# YFPhoto
+YFPhoto v1.0.0
+==============
 
 ![niconiconi~](niconiconi@2x.gif)
 
