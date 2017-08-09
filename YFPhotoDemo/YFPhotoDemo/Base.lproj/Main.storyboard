@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RgY-jY-gDc">
+                                <rect key="frame" x="-0.5" y="50" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RgY-jY-gDc" secondAttribute="height" multiplier="1:1" id="XqW-yO-WkE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dib-EN-R1a">
+                                <rect key="frame" x="135" y="565" width="105" height="34"/>
+                                <color key="backgroundColor" red="0.87270453866825926" green="0.88134517766497467" blue="0.88134517766497467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Select Image">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXT-6E-WuH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7l-rO-xDd">
+                                <rect key="frame" x="15" y="475" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="amb-C4-k1N"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RgY-jY-gDc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7df-Yo-Khw"/>
+                            <constraint firstItem="U7l-rO-xDd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-30" id="9BQ-78-Jqw"/>
+                            <constraint firstItem="Dib-EN-R1a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A1n-pn-3Zq"/>
+                            <constraint firstItem="RgY-jY-gDc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D1O-DU-6QG"/>
+                            <constraint firstItem="U7l-rO-xDd" firstAttribute="top" secondItem="RgY-jY-gDc" secondAttribute="bottom" constant="50" id="HXA-gu-IJC"/>
+                            <constraint firstItem="RgY-jY-gDc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="efV-VQ-pWJ"/>
+                            <constraint firstItem="Dib-EN-R1a" firstAttribute="top" secondItem="U7l-rO-xDd" secondAttribute="bottom" constant="50" id="eud-aO-p6r"/>
+                            <constraint firstItem="U7l-rO-xDd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tPe-pu-I4O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgNameLabel" destination="U7l-rO-xDd" id="71X-5A-Lym"/>
+                        <outlet property="imgView" destination="RgY-jY-gDc" id="xy7-fF-otX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
